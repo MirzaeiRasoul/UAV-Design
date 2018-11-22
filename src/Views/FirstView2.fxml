@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" styleClass="border" stylesheets="@../Resources/css/First.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FirstController">
+   <children>
+      <BorderPane layoutX="43.0" layoutY="268.0" prefHeight="200.0" prefWidth="934.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #100C0D, #1B191A);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="150.0" prefWidth="1014.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="header" styleClass="border-vertical">
+                     <children>
+                        <JFXButton fx:id="closeBtn" layoutX="971.0" layoutY="10.0" onAction="#CloseWindow" ripplerFill="TRANSPARENT" styleClass="btn" text="" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CLOSE" size="18" />
+                           </graphic>
+                        </JFXButton>
+                     </children></AnchorPane>
+                  <HBox fx:id="topPanel" prefHeight="100.0" prefWidth="1024.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" styleClass="form-group">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="20.0" prefWidth="81.0" styleClass="form-label" text="Speed:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <JFXSlider prefHeight="35.0" prefWidth="200.0" styleClass="form-input" />
+                           </children>
+                        </VBox>
+                        <VBox styleClass="form-group">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" styleClass="form-label" text="Algorithm:" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox promptText="Nearest">
+                                 <styleClass>
+                                    <String fx:value="comboBox" />
+                                    <String fx:value="form-input" />
+                                 </styleClass>
+                              </JFXComboBox>
+                           </children>
+                        </VBox>
+                        <VBox styleClass="form-group">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" styleClass="form-label" text="Scenario:" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox promptText="Shortest-Path">
+                                 <styleClass>
+                                    <String fx:value="comboBox" />
+                                    <String fx:value="form-input" />
+                                 </styleClass>
+                              </JFXComboBox>
+                           </children>
+                        </VBox>
+                        <VBox styleClass="form-group">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" styleClass="form-label" text="Background:" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox fx:id="backgroundCombobox">
+                                 <styleClass>
+                                    <String fx:value="comboBox" />
+                                    <String fx:value="form-input" />
+                                 </styleClass>
+                              </JFXComboBox>
+                           </children>
+                        </VBox>
+                     </children></HBox>
+               </children>
+            </VBox>
+         </top>
+         <left>
+            <AnchorPane fx:id="leftPanel" prefHeight="518.0" prefWidth="200.0" styleClass="border-vertical" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="21.0" layoutY="328.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="10.0" text="Details:" textAlignment="CENTER" textFill="WHITE" underline="true" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane layoutX="11.0" layoutY="318.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="10.0" text="Planes:" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="planesLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="10.0" text="00" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane layoutX="21.0" layoutY="328.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="10.0" text="Total Tasks:" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalTasksLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="10.0" text="00" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane layoutX="31.0" layoutY="338.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="10.0" text="Covered Tasks:" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="coveredTasksLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="10.0" text="00" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane layoutX="31.0" layoutY="338.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="10.0" text="Remained Tasks:" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="remainedTasksLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="10.0" text="00" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1.0" layoutY="308.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="10.0" text="Time:" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="timeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="10.0" text="00:00:00" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="25.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="playTimer" buttonType="RAISED" contentDisplay="CENTER" onAction="#PlayTimer" ripplerFill="transparent" styleClass="btn" text="">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PLAY" size="18" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="pauseTimer" buttonType="RAISED" contentDisplay="CENTER" onAction="#PauseTimer" ripplerFill="transparent" styleClass="btn" text="">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PAUSE" size="18" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="stopTimer" buttonType="RAISED" contentDisplay="CENTER" onAction="#StopTimer" ripplerFill="transparent" styleClass="btn" text="">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="STOP" size="18" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding></AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="mainPanel" styleClass="border-vertical" BorderPane.alignment="CENTER">
+            </AnchorPane>
+         </center>
+         <bottom>
+            <HBox fx:id="footer" prefHeight="50.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="COPYRIGHT" size="15" style="-fx-text-alignment: CENTER;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-alignment: center;" text="Copyright - Rasoul Mirzaei (2018)" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

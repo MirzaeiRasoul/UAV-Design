@@ -1,0 +1,97 @@
+{
+  "width": 924,
+  "height": 518,
+  "duration": 20000,
+  "operators": [
+    {
+      "x": 1332,
+      "y": 3604
+    }
+  ],
+  "planes": [
+    {
+      "x": 80,
+      "y": 500,
+      "speed": 100,
+      "batteryCapacity": 8640000,
+      "communicationRange": 2000,
+      "color": "#ff0000"
+    },
+    {
+      "x": 100,
+      "y": 370,
+      "speed": 100,
+      "batteryCapacity": 8640000,
+      "communicationRange": 2000,
+      "color": "#00ff00"
+    },
+    {
+      "x": 170,
+      "y": 400,
+      "speed": 100,
+      "batteryCapacity": 8640000,
+      "communicationRange": 2000,
+      "color": "#0000ff"
+    },
+    {
+      "x": 200,
+      "y": 450,
+      "speed": 100,
+      "batteryCapacity": 8640000,
+      "communicationRange": 2000,
+      "color": "#ffff00"
+    },
+    {
+      "x": 150,
+      "y": 520,
+      "speed": 100,
+      "batteryCapacity": 8640000,
+      "communicationRange": 2000,
+      "color": "#00ffff"
+    }
+  ],
+  "tasks": [
+    {
+      "x": 500,
+      "y": 500,
+      "time": 409930
+    },
+    {
+      "x": 250,
+      "y": 150,
+      "time": 253722
+    },
+    {
+      "x": 250,
+      "y": 400,
+      "time": 452529
+    },
+    {
+      "x": 1660,
+      "y": 8823,
+      "time": 851726
+    },
+    {
+      "x": 8352,
+      "y": 5323,
+      "time": 259759
+    },
+    {
+      "x": 1394,
+      "y": 8761,
+      "time": 843124
+    },
+    {
+      "x": 771,
+      "y": 8031,
+      "time": 509210
+    }
+  ],
+  "generatorSettings": {
+    "planes": "5",
+    "plane-speed": "100",
+    "plane-battery-capacity": "8640000",
+    "plane-communication-range": "2000",
+    "plane-color": "#000000"
+  }
+}
