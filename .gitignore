@@ -5,16 +5,15 @@
 *.log
 
 # Package Files
-*.jar
 *.war
 *.ear
 *.zip
 *.tar.gz
 *.rar
 
-# Test Examples
-Tests/
-
 # IntelliJ Idea
 .idea/
 *.iml
+
+# Test Examples
+Tests/
