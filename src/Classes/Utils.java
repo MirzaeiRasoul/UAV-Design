@@ -1,7 +1,5 @@
 package Classes;
 
-import javafx.scene.shape.Circle;
-
 public final class Utils {
 
     private Utils() {
