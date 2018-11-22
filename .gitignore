@@ -15,6 +15,6 @@
 # Test Examples
 Tests/
 
-# IntelliJ
+# IntelliJ Idea
 .idea/
 *.iml
