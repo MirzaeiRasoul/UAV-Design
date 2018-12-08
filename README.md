@@ -1,6 +1,6 @@
 # UAV-Design
 
-MAS-Simulator project is an open-source simulator for testing Multi-Agent Systems (MAS) algorithms. MAS-Simulator is has been developed by Using Java programming language and JavaFX Library.
+UAV-Design project is an open-source simulator for testing Multi-Agent Systems (MAS) algorithms. UAV-Design is has been developed by Using Java programming language and JavaFX Library.
 
 Other developmental tools that have been used in project are:
 * [Maven](https://maven.apache.org/) - Dependency Management
